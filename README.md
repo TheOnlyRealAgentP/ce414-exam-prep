@@ -1,8 +1,8 @@
 # ce414-exam-prep
 
-Private study page for BYU CE 414 (Engineering Applications of GIS), Fall 2026: a study guide for each midterm and full practice exams in the real format. Plain HTML, CSS and JavaScript with no build step, built the same way as the GIS study hub on [My-Page](https://github.com/TheOnlyRealAgentP/My-Page) (`teach/gis/`) and using the same theme.
+Study page for BYU CE 414 (Engineering Applications of GIS), Fall 2026: a study guide for each midterm and full practice exams in the real format. Plain HTML, CSS and JavaScript with no build step, built the same way as the GIS study hub on [My-Page](https://github.com/TheOnlyRealAgentP/My-Page) (`teach/gis/`) and using the same theme.
 
-**Keep this repo private and don't publish it with GitHub Pages.** It holds my graded Learning Suite reading-quiz questions with their answers, and quiz questions from Dr. Ames's course site. A Pages site would be public even from a private repo.
+Live at https://theonlyrealagentp.github.io/ce414-exam-prep/. It's kept separate from harrisonpstewart.com on purpose: My-Page doesn't link to it, and the page asks search engines not to index it (`noindex` in `index.html`). It includes quiz questions from Dr. Ames's course site and the course's Learning Suite reading quizzes, shared with permission.
 
 ## Structure
 
@@ -72,6 +72,12 @@ python -m http.server 8000
 
 Saved progress (the exam in progress, last results, drill scores) lives in the browser's local storage under `ce414:` keys, so it stays on the machine and browser you used.
 
+## Deploy to GitHub Pages
+
+1. Push to `main`.
+2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
+3. The site appears at `https://theonlyrealagentp.github.io/ce414-exam-prep/`. `.nojekyll` makes Pages serve the files as they are.
+
 ## License
 
-Not licensed for reuse. The self-check quiz questions and explanations belong to Dr. Ames's CE 414 course, and the reading-quiz questions come from the course's Learning Suite quizzes. My own notes and code are © 2026 Harrison Stewart.
+Not licensed for reuse. Shared with permission; the self-check quiz questions and explanations belong to Dr. Ames's CE 414 course, and the reading-quiz questions come from the course's Learning Suite quizzes. My own notes and code are © 2026 Harrison Stewart.

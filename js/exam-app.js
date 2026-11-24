@@ -116,11 +116,11 @@
         <div class="meta-row">
           <span class="pill">${icon("question")}<span>${total} questions</span></span>
           <span class="pill">${icon("check-square")}<span>${count("self-check")} from Dr. Ames's self-check quizzes</span></span>
-          <span class="pill">${icon("book-open-text")}<span>${count("reading")} from my Learning Suite reading quizzes</span></span>
+          <span class="pill">${icon("book-open-text")}<span>${count("reading")} from the Learning Suite reading quizzes</span></span>
           <span class="pill">${icon("calculator")}<span>${count("hand-calc")} hand calculations</span></span>
         </div>
-        <p class="class-note">${icon("lock-simple")}<span>Private study page. It holds graded Learning Suite quiz answers, so it
-          stays in a private repo and isn't published anywhere.</span></p>
+        <p class="class-note">${icon("info")}<span>Questions come from Dr. Ames's self-check quizzes, the course's Learning Suite
+          reading quizzes and hand calculations written for this page, shared with permission.</span></p>
       </header>
 
       ${active ? resumePanel(active) : ""}
